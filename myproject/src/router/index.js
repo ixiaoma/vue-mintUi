@@ -5,7 +5,7 @@ import {appRouter} from './router'
 Vue.use(Router)
 
 export const router =  new Router({
-  mode:'hash',
+  mode:'hash',//history开启后将不能刷新页面
   routes: appRouter
 })
 router.beforeEach((to, from, next) => {

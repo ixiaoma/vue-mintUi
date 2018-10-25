@@ -4,8 +4,10 @@ import Vue from 'vue'
 import App from './App'
 import {router} from './router/index'
 import 'lib-flexible'
+import MintUI from 'mint-ui'
+import 'mint-ui/lib/style.css'
 Vue.config.productionTip = false
-
+Vue.use(MintUI)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
