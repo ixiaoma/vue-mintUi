@@ -9,7 +9,7 @@
     </div>
 </template>
 <script>
-import { Header,Button } from 'mint-ui';
+import { Header,Button } from 'mint-ui';//按需加载
 export default {
     components:{
         mtHeader:Header,
