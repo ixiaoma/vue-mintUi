@@ -1,6 +1,6 @@
 <template>
     <div class="homePage">
-        <headers></headers>
+        <headers pageTitle="首页"></headers>
         <ul
             v-infinite-scroll="loadMore"
             infinite-scroll-disabled="loading"

@@ -1,6 +1,6 @@
 <template>
     <div class="toastPage">
-        <headers backPath="/home"></headers>
+        <headers backPath="/home" pageTitle="Toast"></headers>
         toast
     </div>
 </template>

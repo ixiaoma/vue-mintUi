@@ -1,6 +1,6 @@
 <template>
     <div class="header">
-        <mt-header title="多个按钮">
+        <mt-header :title="pageTitle">
             <router-link v-if="backPath" :to="backPath" slot="left">
                 <mt-button icon="back">返回</mt-button>
             </router-link>
@@ -15,6 +15,6 @@ export default {
         mtHeader:Header,
         mtButton:Button
     },
-    props:["backPath"]
+    props:["backPath","pageTitle"]
 }
 </script>
