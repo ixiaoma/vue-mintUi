@@ -22,8 +22,8 @@ export default {
                 this.nameState = this.username ? (this.username=='0.0' ? 'success' : 'error') :'warning'
                 this.passState = this.password ? (this.password=='1234567890' ? 'success' : 'error') :'warning'
                 if(this.nameState == 'success' && this.passState == 'success'){
+                    localStorage.setItem('loginFlag',true)
                     this.$router.push('home') 
-                    sessionStorage.setItem('loginFlag',true)
                 }else{
                     Toast('请填写正确的用户名密码')
                 }

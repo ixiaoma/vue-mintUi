@@ -1,15 +1,15 @@
 <template>
     <div class="homePage">
         <headers></headers>
-        <!-- <ul
+        <ul
             v-infinite-scroll="loadMore"
             infinite-scroll-disabled="loading"
             infinite-scroll-distance="10">
-            <li v-for="item in list">{{ item }}</li>
-        </ul> -->
-        <router-link to="/" slot="left">
-            
-        </router-link>
+            <router-link v-for="(item,index) in routerList" :key="index" :to="item.path">
+                <li>{{ item.name }}</li>
+            </router-link>
+        </ul>
+        
     </div>
 </template>
 <script>
@@ -17,6 +17,18 @@ import header from '../components/header.vue'
 export default {
     components:{
         headers:header
+    },
+    data(){
+        return {
+            routerList:[
+                {path:'/toast',name:'Toast'}
+            ]
+        }
+    },
+    methods:{
+        loadMore(){
+
+        }
     }
 }
 </script>

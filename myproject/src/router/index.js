@@ -10,7 +10,7 @@ export const router =  new Router({
 })
 router.beforeEach((to, from, next) => {//路由拦截
   if(to.name != 'login'){
-    if(!sessionStorage.getItem('loginFlag')){
+    if(!localStorage.getItem('loginFlag')){
       Toast('请先登录')
       next({
         replace:true,
