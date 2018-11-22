@@ -21,7 +21,8 @@ export default {
     data(){
         return {
             routerList:[
-                {path:'/toast',name:'Toast'}
+                {path:'/toast',name:'Toast'},
+                {path:'/hello',name:'Hello'}
             ]
         }
     },
